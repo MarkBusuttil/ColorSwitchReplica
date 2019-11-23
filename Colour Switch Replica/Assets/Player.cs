@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -14,7 +15,7 @@ public class Player : MonoBehaviour
 	public Color colorPurple;
 	public Color colorPink;
 
-    	void Start ()
+    void Start ()
 	{
 		SetRandomColor();
 	}
@@ -29,7 +30,21 @@ public class Player : MonoBehaviour
         
     }
 
+	void OnTriggerEnter2D (Collider2D col)
+	{
+		if (col.tag == "ColorChanger")
+		{
+			SetRandomColor();
+			Destroy(col.gameObject);
+			return;
+		}
 
+		if (col.tag != currentColor)
+		{
+			Debug.Log("GAME OVER!");
+			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+		}
+	}
 
 		void SetRandomColor ()
 	{
