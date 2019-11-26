@@ -9,6 +9,7 @@ TagManager:
   - Pink
   - Purple
   - ColorChanger
+  - FinishLine
   layers:
   - Default
   - TransparentFX
