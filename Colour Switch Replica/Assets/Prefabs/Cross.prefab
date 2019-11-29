@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1640563595003542216}
   - component: {fileID: 1640563595003542199}
+  - component: {fileID: 988762592652534795}
   m_Layer: 0
   m_Name: Cyan
   m_TagString: Cyan
@@ -79,6 +80,38 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &988762592652534795
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1640563595003542217}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 0.29, y: 1.65}
+    newSize: {x: 0.29, y: 1.65}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.13756499, y: 1.65}
+      - {x: -0.145, y: 1.3185095}
+      - {x: -0.145, y: 0.08}
+      - {x: -0.13499999, y: 0}
+      - {x: 0.114999995, y: 0}
+      - {x: 0.145, y: 0.04}
+      - {x: 0.145, y: 1.65}
 --- !u!1 &1640563595656442515
 GameObject:
   m_ObjectHideFlags: 0
@@ -89,6 +122,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1640563595656442514}
   - component: {fileID: 1640563595656442513}
+  - component: {fileID: 5898451543545900024}
   m_Layer: 0
   m_Name: Pink
   m_TagString: Pink
@@ -158,6 +192,38 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &5898451543545900024
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1640563595656442515}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 1}
+    oldSize: {x: 0.29, y: 1.65}
+    newSize: {x: 0.29, y: 1.65}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.044999998, y: 0}
+      - {x: -0.145, y: -0.08}
+      - {x: -0.145, y: -1.65}
+      - {x: -0.105, y: -1.65}
+      - {x: 0.145, y: -1.36}
+      - {x: 0.145, y: -0.11}
+      - {x: 0.074999996, y: 0}
 --- !u!1 &1640563595682471441
 GameObject:
   m_ObjectHideFlags: 0
@@ -168,6 +234,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1640563595682471440}
   - component: {fileID: 1640563595682471455}
+  - component: {fileID: 3858655957654367318}
   m_Layer: 0
   m_Name: Yellow
   m_TagString: Yellow
@@ -237,6 +304,38 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &3858655957654367318
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1640563595682471441}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0.5}
+    oldSize: {x: 1.65, y: 0.29}
+    newSize: {x: 1.65, y: 0.29}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.099999994, y: 0.145}
+      - {x: 0, y: 0.024999999}
+      - {x: 0, y: -0.024999999}
+      - {x: 0.12, y: -0.145}
+      - {x: 1.65, y: -0.145}
+      - {x: 1.65, y: -0.105}
+      - {x: 1.37, y: 0.145}
 --- !u!1 &1640563595771488639
 GameObject:
   m_ObjectHideFlags: 0
@@ -247,6 +346,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1640563595771488638}
   - component: {fileID: 1640563595771488637}
+  - component: {fileID: 3217804573634007246}
   m_Layer: 0
   m_Name: Purple
   m_TagString: Purple
@@ -316,6 +416,39 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &3217804573634007246
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1640563595771488639}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 1, y: 0.5}
+    oldSize: {x: 1.65, y: 0.29}
+    newSize: {x: 1.65, y: 0.29}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -1.65, y: 0.145}
+      - {x: -1.65, y: 0.105}
+      - {x: -1.51, y: -0.024999999}
+      - {x: -1.35, y: -0.145}
+      - {x: -0.08, y: -0.145}
+      - {x: 0, y: -0.035}
+      - {x: 0, y: 0.065}
+      - {x: -0.11, y: 0.145}
 --- !u!1 &8221771785884032581
 GameObject:
   m_ObjectHideFlags: 0

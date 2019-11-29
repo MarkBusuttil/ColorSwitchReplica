@@ -11,6 +11,7 @@ TagManager:
   - ColorChanger
   - FinishLine
   - Base
+  - Score
   layers:
   - Default
   - TransparentFX
@@ -20,7 +21,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - Background
   - 
   - 
   - 
@@ -50,4 +51,7 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 4142534015
+    locked: 0
+  - name: Background
+    uniqueID: 1032983183
     locked: 0

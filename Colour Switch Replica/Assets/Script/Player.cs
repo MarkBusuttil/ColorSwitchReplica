@@ -33,6 +33,10 @@ public class Player : MonoBehaviour
     {
         if(Input.GetButtonDown("Jump") || Input.GetMouseButtonDown (0))
         {
+			if (rb.bodyType == RigidbodyType2D.Kinematic)
+			{
+				rb.bodyType = RigidbodyType2D.Dynamic;
+			}
             rb.velocity = Vector2.up * jumpForce;
         }
         
@@ -47,15 +51,23 @@ public class Player : MonoBehaviour
 			return;
 		}
 
+		if (col.tag == "FinishLine")
+		{
+			Debug.Log("NICENICENICENICE");
+			return;
+		}
+
+		if (col.tag == "Score")
+		{
+			Debug.Log("+1 PT");
+			Destroy(col.gameObject);
+			return;
+		}
+
 		if (col.tag != currentColor.ToString())
 		{
 			Debug.Log("GAME OVER!");
 			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-		}
-
-		if (col.tag == "FinishLine")
-		{
-			Debug.Log("NICENICENICENICE");
 		}
 	}
 
