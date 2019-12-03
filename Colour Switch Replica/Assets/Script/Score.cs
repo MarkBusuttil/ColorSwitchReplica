@@ -1,15 +1,40 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using TMPro;
+﻿using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Score : MonoBehaviour
 {
-    [SerializeField]
-    private TextMeshProUGUI _scoreText;
+    // [SerializeField]
+    // public Transform player;
+    public Text scoreText;
+    public int score;
 
-    public void SetScoreText(int score)
+    void Start ()
     {
-        _scoreText.SetText(score.ToString ());
+        score = 0;
+        SetScoreText ();
     }
+
+    public void SetScore(int score)
+    {
+        this.score = score;
+        SetScoreText();
+    }
+    
+        void SetScoreText ()
+    {
+        scoreText.text = score.ToString ();
+
+    }
+    // public void SetScoreText(int Score)
+    // {
+    //     scoreText.text = Score.ToString ();
+    // }
+
+
+
+    // public void SetScoreText(int score)
+    // {
+    //     _scoreText.SetText(score.ToString ());
+    // }
 }

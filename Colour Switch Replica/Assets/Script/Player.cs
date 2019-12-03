@@ -23,15 +23,18 @@ public class Player : MonoBehaviour
 
 	List<PlayerColor> colors = new List<PlayerColor>(){ PlayerColor.Cyan, PlayerColor.Yellow, PlayerColor.Pink, PlayerColor.Purple };
 
+	Score score;
+
     void Start ()
 	{
 		SetRandomColor();
+		score = GetComponent<Score>();
 	}
     
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetButtonDown("Jump") || Input.GetMouseButtonDown (0))
+        if(Input.GetButtonDown("Jump") )
         {
 			if (rb.bodyType == RigidbodyType2D.Kinematic)
 			{
@@ -60,6 +63,7 @@ public class Player : MonoBehaviour
 		if (col.tag == "Score")
 		{
 			Debug.Log("+1 PT");
+			score.SetScore(score.score + 1);
 			Destroy(col.gameObject);
 			return;
 		}
