@@ -21,6 +21,8 @@ public class Player : MonoBehaviour
 	public Color colorPurple;
 	public Color colorPink;
 
+	private bool _hasGameStarted = false;
+
 	List<PlayerColor> colors = new List<PlayerColor>(){ PlayerColor.Cyan, PlayerColor.Yellow, PlayerColor.Pink, PlayerColor.Purple };
 
 	Score score;
@@ -36,9 +38,10 @@ public class Player : MonoBehaviour
     {
         if(Input.GetButtonDown("Jump") )
         {
-			if (rb.bodyType == RigidbodyType2D.Kinematic)
+			if (rb.bodyType == RigidbodyType2D.Kinematic && _hasGameStarted == false)
 			{
 				rb.bodyType = RigidbodyType2D.Dynamic;
+				_hasGameStarted = true;
 			}
             rb.velocity = Vector2.up * jumpForce;
         }
@@ -56,7 +59,8 @@ public class Player : MonoBehaviour
 
 		if (col.tag == "FinishLine")
 		{
-			Debug.Log("NICENICENICENICE");
+			score.DoGameOver();
+			// stop the game
 			return;
 		}
 
@@ -70,8 +74,7 @@ public class Player : MonoBehaviour
 
 		if (col.tag != currentColor.ToString())
 		{
-			Debug.Log("GAME OVER!");
-			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+			score.DoGameOver();
 		}
 	}
 
